@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+/* preloader section */
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #0c0513;
+  background-image: url(./assets/pre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#preloader-none {
+  opacity: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* toast */
+.toast-notify{
+  bottom: 10% !important;
+}
+
+@media(max-width : 768px){
+  .toast-notify{
+    bottom: 14% !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-body{
+  background-color: #19221d;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(198.00, 100%, 50%) 0, transparent 55%);
 }
 
-.App-link {
-  color: #61dafb;
+.login-card{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(45, 40, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.quiz-body{
+  background-color: #4c8b77;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(196.00, 15%, 20%) 0, transparent 55%)
+}
+
+.question-card{
+  backdrop-filter: blur(16px) saturate(177%);
+    -webkit-backdrop-filter: blur(16px) saturate(177%);
+    background-color: rgba(129, 124, 124, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.login-container{
+  width: 50% !important;
+}
+
+@media(max-width : 768px){
+  .login-container{
+    width: 90% !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.login-label{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 75% !important;
+} 
+
+@media(max-width : 768px){
+  .login-label{
+    width: 95% !important;
+  }
+}
+
+.login-input {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.login-input::placeholder{
+  color: #fff;
+}
+
+.login-input:focus{
+  outline: none !important;
+}
+
+
+
+.profile-body {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for visibility */
+  overflow: auto !important;
+}
+
+.profile-container:hover .profile-body {
+  opacity: 1;
+  background-color: black !important;
+  color: #fff !important;
+  height: 100px !important;
+  width: 280px !important;
+}
+
+
+/* footer */
+.footer-btn {
+  width: 15% !important;
+}
+
+@media(max-width : 768px){
+  .footer-btn{
+    width: 25% !important;
+  }
+}
+
+/* quiz */
+.quiz-wrapper{
+  width: 75% !important;
+}
+
+@media(max-width : 768px){
+  .quiz-wrapper{
+    width: 95% !important;
   }
 }
