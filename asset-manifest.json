@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mind-sprint/static/css/main.12f069b0.css",
+    "main.js": "/mind-sprint/static/js/main.52374ed6.js",
+    "static/media/logo.png": "/mind-sprint/static/media/logo.e1b28a9e33fdd7c99b35.png",
+    "index.html": "/mind-sprint/index.html",
+    "static/media/pre.svg": "/mind-sprint/static/media/pre.d1a5faa0eb5d5156b7b8.svg",
+    "main.12f069b0.css.map": "/mind-sprint/static/css/main.12f069b0.css.map",
+    "main.52374ed6.js.map": "/mind-sprint/static/js/main.52374ed6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12f069b0.css",
+    "static/js/main.52374ed6.js"
+  ]
+}
