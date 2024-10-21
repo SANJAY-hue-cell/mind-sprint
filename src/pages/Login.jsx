@@ -36,16 +36,16 @@ function Login() {
             return;
         }
         
-        if (!tempUser.email) {
-            if (errorToastId) {
-                toast.dismiss(errorToastId); // Dismiss previous error toast
-            }
-            errorToastId = toast.error("Email is required and should be valid", {
-                autoClose: 3000, // Close after 3 seconds
-            });
-            return;
+        if (!tempUser.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(tempUser.email)) {
+    if (errorToastId) {
+        toast.dismiss(errorToastId); // Dismiss previous error toast
+    }
+    errorToastId = toast.error("Email is required and should be valid", {
+        autoClose: 3000, // Close after 3 seconds
+    });
+    return;
         }
-    
+        
         localStorage.setItem('quiz_user', JSON.stringify(tempUser));
         setData({
             name: '',
